@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(98, 95, 240);
+  z-index: 20;
+  align-items: center;
+}
+header h2 {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+}
+header button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background: #130707;
+  color: #fff;
+}
+header button:hover {
+  transform: scale(1.05);
+  color: blueviolet;
+}
+
+/*  ****  section style ******/
+
+section {
+  display: flex;
+  background-color: aqua;
+  /* width: 100%; */
+  margin-top: 60px;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.sect-text-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+section img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.sect-text {
+  font-weight: 600;
+  font-size: 45px;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+}
+.sect-text p {
+  color: yellow;
+  display: inline-block;
+}
+
+.sect-text-cont p {
+  font-weight: 400;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form input {
+  padding: 15px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-weight: 300;
+  width: auto;
+}
+.form button {
+  padding: 8px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  background: #007bff;
+}
+.form button:hover {
+}
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+  .sect-text-cont {
+    align-items: center;
+  }
+  .sect-text {
+    text-align: center;
+  }
+}
